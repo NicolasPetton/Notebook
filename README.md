@@ -6,6 +6,8 @@ Notebook is a clean, uncluttered theme for TiddlyWiki.
   `notebook-mobile` plugin.
 - Notebook can be used with 2 colour palettes, a grey and a beige one. To switch
   between colour palettes, click the color palette switch button in the top bar.
+- Notebook uses a custom left sidebar, with another sticky bar at the top of the
+  page (or at the bottom on mobile).
 
 ## Demo & Screenshots
 
