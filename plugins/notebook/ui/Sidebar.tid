@@ -13,7 +13,7 @@ $:/config/SideBarSegments/Visibility/$(listItem)$
     <$scrollable fallthrough="no">
     <div class="nc-sidebar">
       <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem">
-        <$reveal type="nomatch" state=<<config-title>> text="hide"  tag="div">
+        <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="inline"/>
         </$reveal>
       </$list>

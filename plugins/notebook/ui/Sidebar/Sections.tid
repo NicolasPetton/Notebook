@@ -4,6 +4,6 @@ tags: $:/themes/nico/notebook/tags/Sidebar
 title: $:/themes/nico/notebook/ui/Sidebar/Sections
 type: text/vnd.tiddlywiki
 
-<$list filter="[all[shadows+tiddlers]!has[daft.of]tag[$:/themes/nico/notebook/tags/SidebarSection]]" >
+<$list filter="[all[shadows+tiddlers]!has[daft.of]tag[$:/themes/nico/notebook/tags/SidebarSection]]">
   {{||$:/themes/nico/notebook/ui/Sidebar/SectionTemplate}}
 </$list>

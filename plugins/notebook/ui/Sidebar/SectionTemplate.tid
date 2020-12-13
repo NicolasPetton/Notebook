@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
       <span class="caret">{{$:/themes/nico/notebook/images/caret-down}}</span>
     </$button>
     <div class="content">
-      <$transclude $tiddler=<<currentTiddler>>>
+      <$transclude $tiddler=<<currentTiddler>>/>
     </div>
   </div>
 </$reveal>
