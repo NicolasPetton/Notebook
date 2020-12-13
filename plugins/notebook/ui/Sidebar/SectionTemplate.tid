@@ -1,0 +1,24 @@
+created: 20200429161226897
+modified: 20201213105438769
+title: $:/themes/nico/notebook/ui/Sidebar/SectionTemplate
+type: text/vnd.tiddlywiki
+
+<$reveal state="$:/state/notebook-sidebar-section" type="match" text=<<currentTiddler>> default="no" animate="no">
+  <div class="segment section open">
+    <$button set="$:/state/notebook-sidebar-section" setTo="" class="tc-btn-invisible label">
+      <$view field="caption"/>
+      <span class="caret">{{$:/themes/nico/notebook/images/caret-down}}</span>
+    </$button>
+    <div class="content">
+      <$transclude $tiddler=<<currentTiddler>>>
+    </div>
+  </div>
+</$reveal>
+<$reveal state="$:/state/notebook-sidebar-section" type="nomatch" text=<<currentTiddler>> default="yes" animate="no">
+  <div class="segment section">
+    <$button set="$:/state/notebook-sidebar-section" setTo=<<currentTiddler>> class="tc-btn-invisible label">
+      <$view field="caption"/>
+      <span class="caret">{{$:/themes/nico/notebook/images/caret-right}}</span>
+    </$button>
+  </div>
+</$reveal>

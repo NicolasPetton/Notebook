@@ -1,0 +1,585 @@
+created: 20200419141443144
+creator: nico
+modified: 20201211152725288
+modifier: nico
+tags: $:/tags/Stylesheet
+title: $:/themes/nico/notebook/base
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+\define if-sidebar(text)
+  <$reveal state="$:/state/notebook-sidebar" type="match" text="yes">
+    $text$
+  </$reveal>
+\end
+
+/* Top and bottom bars */
+
+/* Hide the top-right bar */
+.tc-topbar.tc-topbar-right {
+  display: none;
+}
+
+div.tc-sidebar-header {
+  padding: 0;
+  min-height: 0;
+}
+
+.tc-story-river {
+  padding: 6px 0 !important;
+  width: 100% !important;
+  max-width: 960px !important;
+  margin: 0 auto !important;
+  margin-top: 36px !important;
+}
+
+div.tc-tiddler-frame {
+  width: 100%;
+  margin: 20px 0;
+  background: <<colour tiddler-background>>;
+  box-shadow: 0 5px 20px <<colour tiddler-border>>;
+  border-radius: 6px;
+  padding: 42px 60px 60px 60px;
+}
+
+h1.tc-site-title {
+  margin-top: 14px;
+  font-size: 1.5em !important;
+}
+
+.nc-bar {
+  padding: 10px;
+  height: {{$:/themes/nico/notebook/metrics/topbar-height}};
+  background: <<colour page-background>>;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nc-topbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nc-bar.nc-topbar {
+  top: 0;
+  background: <<colour topbar-background>>;
+  max-width: 1000px;
+  padding: 10px 40px;
+  margin: 0 auto;
+}
+
+.nc-bar.nc-bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.nc-bar .left svg {
+  fill: <<colour sidebar-controls-foreground>>;
+}
+
+.nc-bar input[type="search"] {
+  width: 400px;
+  padding: .6em 1em;
+  margin-top: -.2em;
+  background: <<colour topbar-search-background>>;
+  color: #283c46;
+  transition: all ease-in .2s;
+  border: 1px solid transparent;
+  outline: 0;
+}
+
+.nc-bar input[type="search"]:focus {
+  background: white;
+  border: 1px solid #38aee8;
+  box-shadow: 0 0 0 .2rem #e6f0ff;
+}
+
+.nc-bar .tc-block-dropdown.tc-search-drop-down {
+  margin-left: 0;
+  width: 400px;
+  border: 0;
+  box-shadow: 0 0 6px 0 #ccc;
+  border-radius: 6px;
+  padding: 20px 0;
+}
+
+.nc-bar p {
+  margin: 0;
+}
+
+.nc-bar .tc-page-controls {
+  margin-top: 0;
+}
+
+.nc-bar .tc-page-controls button {
+  margin-right: .8em;
+}
+
+.nc-bar .tc-block-dropdown {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .nc-topbar {
+    display: none;
+  }
+
+  .tc-story-river {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 60px !important;
+  }
+
+  div.tc-tiddler-frame {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border-top: 0;
+  }
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .nc-bottombar {
+    display: none;
+  }
+}
+
+@media(max-width: 1400px) {
+  .tc-story-river {
+    max-width: 800px !important;
+  }
+
+  .nc-bar.nc-topbar {
+    max-width: 840px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .tc-story-river {
+    max-width: 600px !important;
+  }
+
+  .nc-bar.nc-topbar {
+    max-width: 640px;
+  }
+
+  .nc-bar input[type="search"] {
+    width: 200px;
+  }
+}
+
+/* Sidebar */
+
+@keyframes sidebar-appear {
+  0%   {
+    left: -{{$:/themes/nico/notebook/metrics/sidebar-width}};
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes sidebar-toggle-appear {
+  0%   {
+    left: 6px;
+  }
+  100% {
+    left: calc({{$:/themes/nico/notebook/metrics/sidebar-width}} + 6px);
+  }
+}
+
+<<if-sidebar """
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .nc-sidebar {
+    animation: sidebar-appear .14s;
+  }
+
+  .sidebar-toggle {
+    animation: sidebar-toggle-appear .14s;
+  }
+}
+""">>
+
+.nc-sidebar {
+  background: <<colour tiddler-background>>;
+  border-right: 1px solid <<colour tiddler-border>>;
+  width: {{$:/themes/nico/notebook/metrics/sidebar-width}};
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.nc-sidebar .segment {
+  border-bottom: 1px solid #eee;
+}
+
+.nc-sidebar a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nc-sidebar ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.8em;
+}
+
+.nc-sidebar ol ol {
+  padding-left: 18px;
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .nc-sidebar .mobile-only {
+    display: none;
+  }
+}
+
+.nc-sidebar h1.tc-site-title {
+  margin: 0;
+}
+
+.nc-sidebar p {
+  margin: 0;
+}
+
+.nc-sidebar .tc-site-subtitle {
+  color: <<colour site-title-foreground>>;
+}
+
+.nc-sidebar .section .label {
+  padding: 2px 0;
+  color: <<colour site-title-foreground>>;
+  fill: <<colour site-title-foreground>>;
+  font-weight: bold;
+  line-height: 1.6em;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 15px;
+  border-radius: 0;
+}
+
+.nc-sidebar .section:not(.open) .label:hover {
+  background: #eee;
+}
+
+.nc-sidebar .section.open .label {
+  color: white;
+  fill: white;
+  background: <<colour primary>>;
+  border-bottom: 1px solid #eee;
+}
+
+.nc-sidebar .section .label .caret {
+  display: inline-block;
+  width: 15px;
+  float: right;
+}
+
+.nc-sidebar .content {
+  padding: 6px 15px;
+  font-size: 1em;
+}
+
+.nc-sidebar .tc-tiddlylink {
+  color: <<colour primary>>;
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .nc-sidebar {
+    position: fixed;
+    left: 0;
+    top:  0;
+    bottom: 0;
+  }
+}
+
+<<if-sidebar """
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  @keyframes sidebar-slide {
+    0%   {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .nc-sidebar {
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 48px;
+    z-index: 3000;
+    animation: sidebar-slide .2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .tc-page-container {
+    margin-left: {{$:/themes/nico/notebook/metrics/sidebar-width}} !important;
+  }
+
+  .nc-topbar-wrapper {
+    left: {{$:/themes/nico/notebook/metrics/sidebar-width}};
+  }
+}
+""">>
+
+/* Animate the hamburger button */
+
+@keyframes menu-bars-1 {
+  0%   {}
+  100% {
+    transform: rotate(-45deg) translateY(-10px) translateX(-6px);
+    fill: #3B3B41;
+  }
+}
+
+@keyframes menu-bars-2 {
+  0%   {}
+  100% { opacity: 0; }
+}
+
+@keyframes menu-bars-3 {
+  0%   {}
+  100% {
+    transform: rotate(45deg) translateY(6px) translateX(2px);
+    fill: #3B3B41;
+  }
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 6px;
+  left: 6px;
+  z-index: 2;
+  padding: 4px;
+  border-radius: 8px;
+  transition: all ease-in-out .2s;
+  fill: <<colour sidebar-controls-foreground>>;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle.open {
+  fill: <<colour sidebar-controls-foreground-hover>>;
+}
+
+<<if-sidebar """
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .sidebar-toggle {
+    left: calc({{$:/themes/nico/notebook/metrics/sidebar-width}} + 6px);
+  }
+}
+""">>
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .sidebar-toggle {
+    top: auto;
+    bottom: 10px;
+  }
+}
+
+.sidebar-toggle .bars .bar {
+    transform: rotate(0) translateY(0) translateX(0);
+    opacity: 1;
+    transform-origin: 20px 10px;
+    transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out, fill .4s ease-in-out;
+}
+
+.sidebar-toggle .bars .bar:nth-of-type(3) {
+    transform-origin: 20px 20px;
+}
+
+.sidebar-toggle.open .bars .bar:nth-of-type(1) {
+  animation: menu-bars-1 .6s;
+  animation-fill-mode: forwards;
+}
+.sidebar-toggle.open .bars .bar:nth-of-type(2) {
+  animation: menu-bars-2 .6s;
+  animation-fill-mode: forwards;
+}
+.sidebar-toggle.open .bars .bar:nth-of-type(3) {
+  animation: menu-bars-3 .6s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  div.tc-tiddler-frame {
+    padding: 14px;
+  }
+}
+
+/* Inputs & fonts */
+
+input {
+    transition: border .14s ease-in-out;
+  border: 1px solid #d9d9d9;
+  padding: .5em;
+  border-radius: 4px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0.2rem #e6f0ff;
+  outline: 0;
+  border-color: <<colour primary>>;
+}
+
+button {
+  border-radius: 1.5em;
+  border: 1px solid #ccc;
+  background: white;
+  padding: .3em 1em;
+  cursor: pointer;
+  transition: box-shadow ease-in .1s;
+}
+
+button:focus, button:active {
+  outline: 0 none;
+  border-color: #aaa;
+}
+
+button.tc-btn-invisible {
+  border-radius: 0;
+}
+
+.tc-editor-toolbar button,
+.tc-editor-toolbar button.tc-btn-invisible {
+  border-radius: 3px;
+  background: <<colour background>>;
+  border: 1px solid <<colour tiddler-editor-border>>;
+}
+
+.tc-editor-toolbar button:hover,
+.tc-editor-toolbar button:active {
+  border-color: <<colour primary>>;
+  background: <<colour primary>>;
+  color: <<colour background>>;
+  fill: <<colour background>>;
+}
+
+.tc-titlebar h2, .tc-site-title {
+  font-size: 28px !important;
+  line-height: 34px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.5px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: <<colour tiddler-title-foreground>>
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .tc-tiddler-frame .tc-tiddler-controls svg {
+    fill: transparent;
+    transition: all .2s ease-in;
+  }
+
+  .tc-tiddler-controls svg.tc-image-close-button,
+  .tc-tiddler-controls .py-toggle-todo-button svg,
+  .tc-tiddler-controls svg.tc-image-done-button,
+  .tc-tiddler-frame .tc-tiddler-controls:hover svg {
+    fill: #cccccc;
+  }
+
+  .tc-tiddler-controls .py-toggle-todo-button .done svg {
+    fill: #2da562;
+  }
+}
+
+.tc-tiddler-body h1,
+.tc-tiddler-body h2,
+.tc-tiddler-preview-preview h1,
+.tc-tiddler-preview-preview h2 {
+  font-weight: bold;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button.tc-tag-label, span.tc-tag-label {
+  padding: 0.3em 1em !important;
+}
+
+/* Tabs */
+
+div.tc-tab-buttons button {
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1em;
+  border: 0;
+  padding: 5px 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+div.tc-tab-buttons button.tc-tab-selected {
+  border: 0;
+  border-bottom: 4px solid <<colour primary>>;
+}
+
+/* Dropdowns */
+
+.tc-drop-down {
+  box-shadow: 0 0 10px #cecece;
+  border-radius: 6px;
+  padding: 10px 0 !important;
+}
+
+.tc-drop-down a, .tc-drop-down button {
+  padding: 3px 15px !important;
+}
+
+.tc-search-results {
+  line-height: 2em;
+}
+
+.tc-search-results em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Draft list */
+
+.tc-drafts-list {
+  font-size: .9em;
+  left: auto;
+  right: 0;
+}
+
+.tc-drafts-list a {
+  padding: 6px 12px;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: inline-block;
+}
+
+.nc-refs {
+  color: #888;
+  font-size: .9em;
+}
+
+.nc-refs h4 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.nc-post-created {
+  color: #acacac;
+  font-size: .8em;
+}

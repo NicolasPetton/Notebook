@@ -1,0 +1,16 @@
+created: 20201211110738465
+modified: 20201211111114680
+title: Install
+type: text/vnd.tiddlywiki
+
+!! Theme and plugin installation
+
+Drag the following tiddlers into your wiki to import them:
+
+* $:/plugins/nico/notebook-mobile
+* $:/themes/nico/notebook
+
+!! Setup
+
+* Set the theme to `Notebook`
+* Set the colour palette to either `Notebook grey` or `Notebook beige`, or alternatively, click the {{$:/themes/nico/notebook/ui/Buttons/SwitchPalette}} button.

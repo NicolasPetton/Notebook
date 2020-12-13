@@ -1,0 +1,23 @@
+created: 20200428201218885
+modified: 20201211132714935
+tags: $:/tags/PageTemplate
+title: $:/themes/nico/notebook/ui/Sidebar
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+\define config-title()
+$:/config/SideBarSegments/Visibility/$(listItem)$
+\end
+
+<$reveal state="$:/state/notebook-sidebar" type="match" text="yes" default="no" retain="yes" animate="no">
+    <$scrollable fallthrough="no">
+    <div class="nc-sidebar">
+      <$list filter="[all[shadows+tiddlers]tag[$:/themes/nico/notebook/tags/Sidebar]!has[draft.of]]" variable="listItem">
+        <$reveal type="nomatch" state=<<config-title>> text="hide"  tag="div">
+          <$transclude tiddler=<<listItem>> mode="inline"/>
+        </$reveal>
+      </$list>
+    </div>
+    </$scrollable>
+</$reveal>
+

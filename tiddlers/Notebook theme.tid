@@ -1,0 +1,18 @@
+created: 20201210210453740
+modified: 20201211111218514
+title: Notebook theme
+type: text/vnd.tiddlywiki
+
+Notebook is a clean, uncluttered theme for [[TiddlyWiki|https://tiddlywiki.com]].
+
+* The theme is responsive and comes with mobile support through the ~JavaScript [[$:/plugins/nico/notebook-mobile]].
+* Custom left sidebar
+* Notebook can be used with 2 colour palettes, a grey and a beige one. To switch between colour palettes, click the {{$:/themes/nico/notebook/ui/Buttons/SwitchPalette}} button from the top bar.
+
+!! Contributing
+
+The project is hosted on ~GitHub at https://github.com/NicolasPetton/notebook-theme.
+
+!! License
+
+Notebook is released under MIT, see [[LICENSE]].

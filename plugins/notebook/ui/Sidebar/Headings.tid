@@ -1,0 +1,16 @@
+created: 20200429160014174
+modified: 20201210210231267
+tags: $:/themes/nico/notebook/tags/Sidebar
+title: $:/themes/nico/notebook/ui/Sidebar/Headings
+type: text/vnd.tiddlywiki
+
+<div class="segment">
+  <div class="content">
+    <h1 class="tc-site-title">
+      {{$:/SiteTitle}}
+    </h1>
+    <div class="tc-site-subtitle">
+      {{$:/SiteSubtitle}}
+    </div>
+  </div>
+</div>
