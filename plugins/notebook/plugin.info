@@ -1,0 +1,12 @@
+{
+    "title": "$:/themes/nico/notebook",
+    "name": "Notebook theme",
+    "description": "A clean, uncluttered TiddlyWiki theme",
+    "author": "NicolasPetton",
+    "version": "0.9.1",
+    "core-version": ">=5.1.22",
+    "source": "https://github.com/NicolasPetton/Notebook",
+    "list": "",
+    "dependents": "$:/themes/tiddlywiki/vanilla $:/plugins/nico/notebook-mobile",
+    "plugin-type": "theme"
+}

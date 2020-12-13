@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/nico/notebook-mobile",
+    "name": "Mobile support for the Notebook theme",
+    "description": "JavaScript hooks for mobile devices support of the Notebook theme",
+    "author": "NicolasPetton",
+    "version": "0.9.1",
+    "core-version": ">=5.1.22",
+    "source": "https://github.com/NicolasPetton/Notebook",
+    "list": "",
+    "dependents": "",
+    "plugin-type": "plugin"
+}
