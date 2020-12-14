@@ -1,5 +1,5 @@
 created: 20201211110738465
-modified: 20201211111114680
+modified: 20201213212515113
 title: Install
 type: text/vnd.tiddlywiki
 
@@ -7,8 +7,8 @@ type: text/vnd.tiddlywiki
 
 Drag the following tiddlers into your wiki to import them:
 
-* $:/plugins/nico/notebook-mobile
-* $:/themes/nico/notebook
+{{$:/plugins/nico/notebook-mobile||$:/core/ui/Components/plugin-info}}
+{{$:/themes/nico/notebook||$:/core/ui/Components/plugin-info}}
 
 !! Setup
 
