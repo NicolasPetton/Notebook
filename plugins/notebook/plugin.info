@@ -3,10 +3,10 @@
     "name": "Notebook theme",
     "description": "A clean, uncluttered TiddlyWiki theme",
     "author": "NicolasPetton",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "core-version": ">=5.1.22",
     "source": "https://github.com/NicolasPetton/Notebook",
-    "list": "",
+    "list": "LICENSE",
     "dependents": "$:/themes/tiddlywiki/vanilla $:/plugins/nico/notebook-mobile",
     "plugin-type": "theme"
 }
