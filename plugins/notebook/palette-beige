@@ -27,7 +27,6 @@ external-link-foreground-hover: inherit
 external-link-foreground-visited: #0000aa
 external-link-foreground: #0000ee
 foreground: #3F3B3B
-foreground-old: #283c46
 message-background: #ecf2ff
 message-border: #cfd6e6
 message-foreground: #547599
@@ -41,11 +40,9 @@ muted-foreground: #999999
 notification-background: #ffffdd
 notification-border: #999999
 page-background: #f4f4ee
-page-background-old: #f4f4f4
 pre-background: #f6f6f6
 pre-border: #cccccc
 primary: #7f4bca
-primary-old: #884cc3
 select-tag-background:
 select-tag-foreground:
 sidebar-button-foreground: #a6a69c
@@ -80,7 +77,6 @@ tag-background: #ffeedd
 tag-foreground: #000
 tiddler-background: <<colour background>>
 tiddler-border: #dbdbc7;
-tiddler-border-old: #ddd
 tiddler-controls-foreground-hover: #888888
 tiddler-controls-foreground-selected: #444444
 tiddler-controls-foreground: #cccccc
@@ -97,9 +93,7 @@ tiddler-link-foreground: <<colour primary>>
 tiddler-subtitle-foreground: #c0c0c0
 tiddler-title-foreground: #333
 topbar-background: #f4f4eeee
-topbar-background-old: #f4f4f4ee
 topbar-search-background: #e1e1d9
-topbar-search-background-old: #ddd
 topbar-search-foregroudn: #283c46
 toolbar-new-button:
 toolbar-options-button:
