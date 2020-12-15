@@ -1,5 +1,5 @@
 created: 20201210210453740
-modified: 20201213210238444
+modified: 20201215095839435
 title: Notebook theme
 type: text/vnd.tiddlywiki
 
@@ -15,4 +15,4 @@ The project is hosted on ~GitHub at https://github.com/NicolasPetton/notebook.
 
 !! License
 
-Notebook is released under MIT, see [[LICENSE]].
+Notebook is released under MIT, see [[LICENSE|$:/themes/nico/notebook/LICENSE]].
