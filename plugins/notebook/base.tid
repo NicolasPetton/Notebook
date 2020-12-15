@@ -216,6 +216,7 @@ h1.tc-site-title {
   text-overflow: ellipsis;
   padding-top: 10px;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .nc-sidebar .segment {
