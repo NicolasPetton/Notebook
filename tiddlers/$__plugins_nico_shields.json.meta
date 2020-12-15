@@ -1,0 +1,13 @@
+author: NicolasPetton
+core-version: >=5.1.22
+created: 20201215162616973
+dependents: 
+description: Shields for your wikis
+list: LICENSE
+modified: 20201215162616973
+name: Shields
+plugin-type: plugin
+source: https://github.com/NicolasPetton/Shields
+title: $:/plugins/nico/shields
+type: application/json
+version: 0.0.1

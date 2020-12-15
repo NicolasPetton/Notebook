@@ -1,7 +1,11 @@
 created: 20201210210453740
-modified: 20201215095839435
+modified: 20201215164407787
 title: Notebook theme
 type: text/vnd.tiddlywiki
+
+<$link to="$:/themes/nico/notebook/LICENSE"><<shield label:License status:MIT>></$link>
+<$link to="$:/themes/nico/notebook"><<shield label:Release status:{{$:/themes/nico/notebook!!version}} colour:purple>></$link>
+<a href="https://tiddlywiki.com"><<shield label:~TiddlyWiki status:5.1.22 colour:blue>></a>
 
 Notebook is a clean, uncluttered theme for [[TiddlyWiki|https://tiddlywiki.com]].
 
