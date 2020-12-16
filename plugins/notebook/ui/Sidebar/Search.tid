@@ -1,30 +1,7 @@
 created: 20200429191943257
-modified: 20201210210230940
+modified: 20201216232331512
 tags: $:/themes/nico/notebook/tags/Sidebar
 title: $:/themes/nico/notebook/ui/Sidebar/Search
 type: text/vnd.tiddlywiki
 
-<$set name="searchTiddler" value="$:/temp/notebook-search">
-
-<div class="segment mobile-only">
-  <div class="content search">
-
-    <$edit-text tiddler=<<searchTiddler>> tag="input" type="search" focusPopup="$:/state/popup/notebook-search" class="tc-popup-handle" placeholder="Search..." default=""/>
-    <$button tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}} class="tc-btn-invisible tc-page-controls">
-      <$action-setfield $tiddler="$:/temp/advancedsearch" text={{$:/temp/notebook-search}}/>
-      <!-- <$action-setfield $tiddler=<<searchTiddler>> text=""/> -->
-      <$action-navigate $to="$:/AdvancedSearch"/>
-      {{$:/core/images/advanced-search-button}}
-    </$button>
-
-    <$reveal tag="div" class="tc-block-dropdown-wrapper" state="$:/state/popup/notebook-search" type="nomatch" text="" default="">
-      <$list filter="[<searchTiddler>get[text]minlength{$:/config/Search/MinLength}limit[1]]" emptyMessage="" variable="listItem">
-        <div class="tc-block-dropdown tc-search-drop-down">
-          {{$:/core/ui/SearchResults}}
-        </div>
-      </$list>
-    </$reveal>
-  </div>
-</div>
-
-</$set>
+{{$:/core/ui/SideBarSegments/search}}
