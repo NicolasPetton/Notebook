@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .tc-tiddler-frame .tc-tiddler-controls svg {
-    fill: transparent;
+    opacity: 0;
     transition: all .2s ease-in;
   }
 
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   .tc-tiddler-controls .py-toggle-todo-button svg,
   .tc-tiddler-controls svg.tc-image-done-button,
   .tc-tiddler-frame .tc-tiddler-controls:hover svg {
-    fill: #cccccc;
+    opacity: 1;
   }
 
   .tc-tiddler-controls .py-toggle-todo-button .done svg {
