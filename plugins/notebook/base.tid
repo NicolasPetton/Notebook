@@ -480,7 +480,8 @@ button.tc-btn-invisible {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: <<colour tiddler-title-foreground>>
+  color: <<colour tiddler-title-foreground>>;
+  font-weight: 600;
 }
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
@@ -576,7 +577,6 @@ div.tc-tab-buttons button.tc-tab-selected {
 }
 
 .nc-refs h4 {
-  font-weight: bold;
   margin-bottom: 4px;
 }
 
