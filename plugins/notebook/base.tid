@@ -480,7 +480,6 @@ button.tc-btn-invisible {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: <<colour tiddler-title-foreground>>;
   font-weight: 600;
 }
 
