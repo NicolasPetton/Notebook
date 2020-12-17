@@ -1,0 +1,16 @@
+caption: ChangeLog
+created: 20201217180707912
+modified: 20201217181005674
+tags: 
+title: $:/themes/nico/notebook/changelog
+type: text/vnd.tiddlywiki
+
+! 1.1.0
+
+!! Features
+
+* New theme tweaks tab dedicated to Notebook in the control panel
+
+!! Fixes
+
+* Fixes the position of sticky tiddler titles when the option is turned on
