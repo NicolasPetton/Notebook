@@ -1,0 +1,19 @@
+created: 20200429191943257
+modified: 20201217110323593
+tags:
+title: $:/themes/nico/notebook/ui/Sidebar/SearchResults
+type: text/vnd.tiddlywiki
+
+\define searchResultList()
+  <small>{{$:/language/Search/Matches/Title}}</small>
+
+  <$list filter="[!is[system]search:title{$(searchTiddler)$}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+
+  <small>{{$:/language/Search/Matches/All}}</small>
+
+  <$list filter="[!is[system]search{$(searchTiddler)$}sort[title]limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+\end
+
+<div class="tc-search-results">
+  <<searchResultList>>
+</div>
