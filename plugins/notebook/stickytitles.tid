@@ -1,0 +1,31 @@
+created: 20201217172915960
+modified: 20201217180034682
+title: $:/themes/nico/notebook/stickytitles
+tags: $:/tags/Stylesheet
+
+<$reveal state="$:/themes/nico/notebook/options/stickytitles" type="match" text="yes">
+
+.tc-tiddler-title {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: {{$:/themes/nico/notebook/metrics/topbar-height}};
+  background: <<colour tiddler-background>>;
+  z-index: 500;
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .tc-tiddler-title {
+    top: 0;
+  }
+}
+
+<$list filter="[range[100]]">
+`.tc-story-river .tc-tiddler-frame:nth-child(100n+`<$text text=<<currentTiddler>>/>`) {
+z-index: `<$text text={{{ [[200]subtract<currentTiddler>] }}}/>`;
+}
+`
+</$list>
+</$reveal>

@@ -61,6 +61,7 @@ h1.tc-site-title {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 400;
 }
 
 .nc-bar.nc-topbar {
@@ -76,7 +77,7 @@ h1.tc-site-title {
   bottom: 0;
   left: 0;
   right: 0;
-
+  z-index: 500;
 }
 
 .nc-bar .left svg {
@@ -215,7 +216,7 @@ h1.tc-site-title {
   overflow-x: hidden;
   text-overflow: ellipsis;
   padding-top: 10px;
-  z-index: 1;
+  z-index: 500;
   white-space: nowrap;
 }
 
@@ -367,7 +368,7 @@ h1.tc-site-title {
   position: fixed;
   top: 6px;
   left: 6px;
-  z-index: 2;
+  z-index: 600;
   padding: 4px;
   border-radius: 8px;
   transition: all ease-in-out .2s;
