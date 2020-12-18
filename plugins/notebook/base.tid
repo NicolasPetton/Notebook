@@ -425,10 +425,10 @@ h1.tc-site-title {
   }
 }
 
-/* Inputs & fonts */
+/* Inputs */
 
 input {
-    transition: border .14s ease-in-out;
+  transition: border .14s ease-in-out;
   border: 1px solid #d9d9d9;
   padding: .5em;
   border-radius: 4px;
@@ -443,7 +443,7 @@ input:focus {
 button {
   border-radius: 1.5em;
   border: 1px solid #ccc;
-  background: white;
+  background: <<colour tiddler-background>>;
   padding: .3em 1em;
   cursor: pointer;
   transition: box-shadow ease-in .1s;
@@ -473,16 +473,24 @@ button.tc-btn-invisible {
   fill: <<colour background>>;
 }
 
-.tc-titlebar h2, .tc-site-title {
-  font-size: 28px !important;
-  line-height: 34px !important;
-  font-weight: 600 !important;
-  letter-spacing: -0.5px !important;
+.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame textarea.tc-edit-texteditor,
+.tc-tiddler-frame iframe.tc-edit-texteditor {
+  transition: border .14s ease-in-out;
+  border: 1px solid #d9d9d9;
+  background: <<colour tiddler-background>>;
+  padding: 4px;
+  border-radius: 4px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+.tc-tiddler-frame input.tc-edit-texteditor:focus,
+.tc-tiddler-frame textarea.tc-edit-texteditor:focus,
+.tc-tiddler-frame iframe.tc-edit-texteditor:focus {
+  box-shadow: 0 0 0 0.2rem #e6f0ff;
+  outline: 0;
+  border-color: <<colour primary>>;
 }
+
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .tc-tiddler-frame .tc-tiddler-controls svg {
@@ -502,13 +510,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.tc-tiddler-body h1,
-.tc-tiddler-body h2,
-.tc-tiddler-preview-preview h1,
-.tc-tiddler-preview-preview h2 {
-  font-weight: bold;
-}
-
 button:active, button:focus {
   outline: none;
 }
@@ -516,6 +517,27 @@ button:active, button:focus {
 button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }
+
+/* Fonts */
+
+.tc-titlebar h2, .tc-site-title {
+  font-size: 28px !important;
+  line-height: 34px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.5px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.tc-tiddler-body h1,
+.tc-tiddler-body h2,
+.tc-tiddler-preview-preview h1,
+.tc-tiddler-preview-preview h2 {
+  font-weight: bold;
+}
+
 
 /* Tabs */
 

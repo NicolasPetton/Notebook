@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201217181005674
+modified: 20201218131935217
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 !! Features
 
 * New theme tweaks tab dedicated to Notebook in the control panel
+* Inputs in the edit template are now styled consistently with other inputs
 
 !! Fixes
 
