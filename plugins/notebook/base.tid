@@ -214,20 +214,12 @@ h1.tc-site-title {
   width: {{$:/themes/nico/notebook/metrics/sidebar-width}};
   overflow-y: auto;
   overflow-x: hidden;
-  text-overflow: ellipsis;
   padding-top: 10px;
   z-index: 500;
-  white-space: nowrap;
 }
 
 .nc-sidebar .segment {
   border-bottom: 1px solid #eee;
-}
-
-.nc-sidebar a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .nc-sidebar ol {

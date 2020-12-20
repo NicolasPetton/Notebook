@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201218131935217
+modified: 20201220163547011
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Fixes
+
+* Fix rendering of overflowing/wrapping text in the sidebar
 
 ! 1.1.0
 
