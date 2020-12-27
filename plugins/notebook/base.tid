@@ -530,6 +530,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+div.tc-tiddler-frame .tc-tiddler-body {
+  font-size: {{$:/themes/nico/notebook/metrics/bodyfontsize}};
+  line-height: {{$:/themes/nico/notebook/metrics/bodylineheight}};
+}
 
 /* Tabs */
 
