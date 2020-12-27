@@ -1,11 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201220163547011
+modified: 20201227191446034
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
 
 ! Master
+
+!! Improvements
+
+* Better support for dark colour palettes
 
 !! Fixes
 

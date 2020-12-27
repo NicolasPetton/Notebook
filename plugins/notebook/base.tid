@@ -38,7 +38,7 @@ div.tc-tiddler-frame {
   width: 100%;
   margin: 20px 0;
   background: <<colour tiddler-background>>;
-  box-shadow: 0 5px 20px <<colour tiddler-border>>;
+  box-shadow: 0 5px 20px rgba(0,0,0, 0.12);
   border-radius: 6px;
   padding: 42px 60px 60px 60px;
 }
