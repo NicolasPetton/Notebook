@@ -8,8 +8,8 @@ title: $:/themes/nico/notebook/ui/Buttons/SwitchPalette
 type: text/vnd.tiddlywiki
 
 <$vars
-  grey="$:/themes/nico/notebook/palette-grey"
-  beige="$:/themes/nico/notebook/palette-beige"
+  grey="$:/themes/nico/notebook/palettes/palette-grey"
+  beige="$:/themes/nico/notebook/palettes/palette-beige"
 >
   <$button tooltip="Switch colours" aria-label="Switch colours" class=<<tv-config-toolbar-class>>>
     <$list filter="[<tv-config-toolbar-icons>match[yes]]">
