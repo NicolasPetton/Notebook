@@ -66,7 +66,7 @@ h1.tc-site-title {
 
 .nc-bar.nc-topbar {
   top: 0;
-  background: <<colour topbar-background>>;
+  background: <<colour nc-topbar-background>>;
   max-width: 1000px;
   padding: 10px 40px;
   margin: 0 auto;
@@ -88,7 +88,7 @@ h1.tc-site-title {
   width: 400px;
   padding: .6em 1em;
   margin-top: -.2em;
-  background: <<colour topbar-search-background>>;
+  background: <<colour nc-topbar-search-background>>;
   color: #283c46;
   transition: all ease-in .2s;
   border: 1px solid transparent;
