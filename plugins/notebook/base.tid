@@ -66,7 +66,7 @@ h1.tc-site-title {
 
 .nc-bar.nc-topbar {
   top: 0;
-  background: <<colour nc-topbar-background>>;
+  background: <<colour page-background>>ee;
   max-width: 1000px;
   padding: 10px 40px;
   margin: 0 auto;
@@ -88,24 +88,25 @@ h1.tc-site-title {
   width: 400px;
   padding: .6em 1em;
   margin-top: -.2em;
-  background: <<colour nc-topbar-search-background>>;
-  color: #283c46;
+  background: rgba(0,0,0,.08);
+  color: <<colour foreground>>cc;
   transition: all ease-in .2s;
   border: 1px solid transparent;
   outline: 0;
 }
 
 .nc-bar input[type="search"]:focus {
-  background: white;
-  border: 1px solid #38aee8;
-  box-shadow: 0 0 0 .2rem #e6f0ff;
+  background: <<colour tiddler-background>>;
+  color: <<colour foreground>>;
+  border: 1px solid <<colour primary>>;
+  box-shadow: 0 0 .2rem 0 <<colour primary>>;
 }
 
 .nc-bar .tc-block-dropdown.tc-search-drop-down {
   margin-left: 0;
   width: 400px;
   border: 0;
-  box-shadow: 0 0 6px 0 #ccc;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.2);
   border-radius: 6px;
   padding: 20px 0;
 }
@@ -219,7 +220,7 @@ h1.tc-site-title {
 }
 
 .nc-sidebar .segment {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .nc-sidebar ol {
@@ -265,14 +266,14 @@ h1.tc-site-title {
 }
 
 .nc-sidebar .section:not(.open) .label:hover {
-  background: #eee;
+  background: rgba(0,0,0,.06);
 }
 
 .nc-sidebar .section.open .label {
-  color: white;
-  fill: white;
+  color: <<colour tiddler-background>>;
+  fill: <<colour tiddler-background>>;
   background: <<colour primary>>;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .nc-sidebar .section .label .caret {
@@ -421,13 +422,13 @@ h1.tc-site-title {
 
 input {
   transition: border .14s ease-in-out;
-  border: 1px solid #d9d9d9;
+  border: 1px solid rgba(0,0,0,.2);
   padding: .5em;
   border-radius: 4px;
 }
 
 input:focus {
-  box-shadow: 0 0 0 0.2rem #e6f0ff;
+  box-shadow: 0 0 0.2rem 0 <<colour primary>>;
   outline: 0;
   border-color: <<colour primary>>;
 }
@@ -555,7 +556,7 @@ div.tc-tab-buttons button.tc-tab-selected {
 /* Dropdowns */
 
 .tc-drop-down {
-  box-shadow: 0 0 10px #cecece;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
   border-radius: 6px;
   padding: 10px 0 !important;
 }

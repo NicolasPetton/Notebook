@@ -103,6 +103,3 @@ toolbar-cancel-button:
 toolbar-done-button:
 untagged-background: #999999
 very-muted-foreground: #888888
-nc-topbar-background: #f4f4f4ee
-nc-topbar-search-background: #ddd
-nc-topbar-search-foreground: #283c46
