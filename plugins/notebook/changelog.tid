@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201227194558410
+modified: 20201227224450496
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Improvements
+
+* Use a darker color for tiddler subtitles
 
 ! 1.2.0
 
