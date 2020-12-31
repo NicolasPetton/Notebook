@@ -5,8 +5,8 @@ alert-muted-foreground: #bc8b94
 background: #383e49
 blockquote-bar: <<colour muted-foreground>>
 button-background:
-button-foreground:
 button-border:
+button-foreground:
 code-background: #2c323b
 code-border: #111
 code-foreground: #dd1144
@@ -92,15 +92,15 @@ tiddler-link-background: <<colour background>>
 tiddler-link-foreground: <<colour primary>>
 tiddler-subtitle-foreground: #aaaaaa
 tiddler-title-foreground: <<colour foreground>>
+toolbar-cancel-button:
+toolbar-close-button:
+toolbar-delete-button:
+toolbar-done-button:
+toolbar-edit-button:
+toolbar-info-button:
 toolbar-new-button:
 toolbar-options-button:
 toolbar-save-button:
-toolbar-info-button:
-toolbar-edit-button:
-toolbar-close-button:
-toolbar-delete-button:
-toolbar-cancel-button:
-toolbar-done-button:
 untagged-background: #999999
 very-muted-foreground: #888888
 nc-topbar-background: #1c2129ee
