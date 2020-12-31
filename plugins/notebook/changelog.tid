@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201227224450496
+modified: 20201231100217714
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -10,6 +10,10 @@ type: text/vnd.tiddlywiki
 !! Improvements
 
 * Use a darker color for tiddler subtitles
+
+!! Fixes
+
+* Fix the z-index of the topbar for the zoomin story view
 
 ! 1.2.0
 

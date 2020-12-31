@@ -61,7 +61,8 @@ h1.tc-site-title {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 400;
+  /* The z-index needs to be above the z-index used in tiddlers in zoomin view */
+  z-index: 501;
 }
 
 .nc-bar.nc-topbar {
@@ -77,7 +78,8 @@ h1.tc-site-title {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 500;
+  /* The z-index needs to be above the z-index used in tiddlers in zoomin view */
+  z-index: 501;
 }
 
 .nc-bar .left svg {
