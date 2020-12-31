@@ -90,7 +90,7 @@ h1.tc-site-title {
   width: 400px;
   padding: .6em 1em;
   margin-top: -.2em;
-  background: <<colour sidebar-button-foreground>>55;
+  background: <<colour sidebar-button-foreground>>44;
   color: <<colour foreground>>cc;
   transition: all ease-in .2s;
   border: 1px solid transparent;
@@ -468,8 +468,8 @@ button.tc-btn-invisible {
 .tc-editor-toolbar button.tc-btn-invisible {
   border-radius: 3px;
   background: <<colour tiddler-editor-background>>;
-  color: <<colour tiddler-controls-foreground>>;
-  fill: <<colour tiddler-controls-foreground>>;
+  color: <<colour foreground>>;
+  fill: <<colour foreground>>;
   border: 1px solid <<colour tiddler-editor-border>>;
 }
 
