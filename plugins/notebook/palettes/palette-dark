@@ -103,6 +103,3 @@ toolbar-options-button:
 toolbar-save-button:
 untagged-background: #999999
 very-muted-foreground: #888888
-nc-topbar-background: #1c2129ee
-nc-topbar-search-background: #e1e1d9
-nc-topbar-search-foreground: #283c46
