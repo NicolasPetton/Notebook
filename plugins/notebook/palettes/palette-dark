@@ -76,10 +76,10 @@ table-header-background: #262b33
 tag-background: #fcb671
 tag-foreground: #000
 tiddler-background: <<colour background>>
-tiddler-border: #111;
-tiddler-controls-foreground-hover: <<colour foeground>>
-tiddler-controls-foreground-selected: <<colour foreground>>
-tiddler-controls-foreground: <<color foreground>>
+tiddler-border: #111
+tiddler-controls-foreground-hover: #cad2e5
+tiddler-controls-foreground-selected: #cad2e5
+tiddler-controls-foreground: #5e646f
 tiddler-editor-background: <<colour background>>
 tiddler-editor-border-image: #ffffff
 tiddler-editor-border: rgba(255, 255, 255, 0.3)
