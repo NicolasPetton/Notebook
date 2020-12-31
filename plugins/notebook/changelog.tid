@@ -1,9 +1,21 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201231135753768
+modified: 20201231225236699
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! 1.3.1
+
+!! Improvements
+
+* Use a slightly lighter colour as the search input background
+* Improve contrast of sidebar buttons in the dark palette
+
+!! Fixes
+
+* Fix tiddler control button colours in all three palettes
+* Fix tab colours in palette-dark
 
 ! 1.3.0
 
