@@ -515,7 +515,7 @@ button.tc-tag-label, span.tc-tag-label {
 
 /* Fonts */
 
-.tc-titlebar h2, .tc-site-title {
+.tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
   font-weight: 600 !important;

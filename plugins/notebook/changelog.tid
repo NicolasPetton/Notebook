@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20201231100217714
+modified: 20201231100628343
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -14,6 +14,7 @@ type: text/vnd.tiddlywiki
 !! Fixes
 
 * Fix the z-index of the topbar for the zoomin story view
+* Fix the font weight of tiddler titles in edit mode
 
 ! 1.2.0
 
