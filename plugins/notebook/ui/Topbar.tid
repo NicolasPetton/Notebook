@@ -1,6 +1,6 @@
 created: 20200428203101797
 creator: nico
-modified: 20201210205606414
+modified: 20201231111323658
 modifier: nico
 tags: $:/tags/PageTemplate
 title: $:/themes/nico/notebook/ui/Topbar
@@ -15,8 +15,7 @@ type: text/vnd.tiddlywiki
         </$reveal>
       </$list>
       <div class="center">
-        <!-- <input type="search" placeholder="Search..."/> -->
-        {{$:/themes/nico/notebook/ui/Sidebar/Search}}
+        {{$:/themes/nico/notebook/ui/Search}}
       </div>
       <div class="right">
         {{$:/core/ui/SideBarSegments/page-controls}}
