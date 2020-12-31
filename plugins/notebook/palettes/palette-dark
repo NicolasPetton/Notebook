@@ -45,14 +45,14 @@ pre-border: <<colour tiddler-border>>
 primary: #bf93ff
 select-tag-background:
 select-tag-foreground:
-sidebar-button-foreground: #888d95
-sidebar-controls-foreground-hover: #cccccc
+sidebar-button-foreground: #5e646f
+sidebar-controls-foreground-hover: #cad2e5
 sidebar-controls-foreground: <<colour sidebar-button-foreground>>
 sidebar-foreground-shadow: rgba(255,255,255, 0.8)
-sidebar-foreground: #acacac
+sidebar-foreground: #cad2e5
 sidebar-muted-foreground-hover: #444444
 sidebar-muted-foreground: #c0c0c0
-sidebar-tab-background-selected: <<colour tab-background>>
+sidebar-tab-background-selected: <<colour tab-background-selected>>
 sidebar-tab-background: <<colour tab-background>>
 sidebar-tab-border-selected: <<colour tab-border-selected>>
 sidebar-tab-border: <<colour tab-border>>
