@@ -64,12 +64,12 @@ sidebar-tiddler-link-foreground: <<colour tab-foreground>>
 site-title-foreground: <<colour foreground>>
 static-alert-foreground: #aaaaaa
 tab-background-selected: <<colour background>>
-tab-background: #eeeeee
-tab-border-selected: #cccccc
-tab-border: #cccccc
-tab-divider: #d8d8d8
+tab-background: <<colour page-background>>
+tab-border-selected: <<colour foreground>>
+tab-border: #cad2e5
+tab-divider: #cad2e5
 tab-foreground-selected: #ecf2ff
-tab-foreground: <colour foreground>>
+tab-foreground: #cad2e5
 table-border: #aaaaaa
 table-footer-background: #a8a8a8
 table-header-background: #262b33
