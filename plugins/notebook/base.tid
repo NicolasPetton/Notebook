@@ -90,7 +90,7 @@ h1.tc-site-title {
   width: 400px;
   padding: .6em 1em;
   margin-top: -.2em;
-  background: rgba(0,0,0,.08);
+  background: <<colour sidebar-button-foreground>>55;
   color: <<colour foreground>>cc;
   transition: all ease-in .2s;
   border: 1px solid transparent;
@@ -241,7 +241,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .nc-sidebar .mobile-only {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .desktop-only {
     display: none;
   }
 }
@@ -346,7 +352,7 @@ input[type="search"]::-webkit-search-cancel-button {
   0%   {}
   100% {
     transform: rotate(-45deg) translateY(-10px) translateX(-6px);
-    fill: #3B3B41;
+    fill: <<colour foreground>>;
   }
 }
 
@@ -359,7 +365,7 @@ input[type="search"]::-webkit-search-cancel-button {
   0%   {}
   100% {
     transform: rotate(45deg) translateY(6px) translateX(2px);
-    fill: #3B3B41;
+    fill: <<colour foreground>>;
   }
 }
 
@@ -426,14 +432,15 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* Inputs */
 
-input {
+input, textarea {
   transition: border .14s ease-in-out;
-  border: 1px solid rgba(0,0,0,.2);
+  background: <<colour tiddler-editor-background>>;
+  border: 1px solid <<colour tiddler-editor-border>>;
   padding: .5em;
   border-radius: 4px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   box-shadow: 0 0 0.2rem 0 <<colour primary>>;
   outline: 0;
   border-color: <<colour primary>>;
@@ -446,11 +453,11 @@ button {
   padding: .3em 1em;
   cursor: pointer;
   transition: box-shadow ease-in .1s;
+  color: <<color foreground>>;
 }
 
 button:focus, button:active {
   outline: 0 none;
-  border-color: #aaa;
 }
 
 button.tc-btn-invisible {
@@ -460,7 +467,9 @@ button.tc-btn-invisible {
 .tc-editor-toolbar button,
 .tc-editor-toolbar button.tc-btn-invisible {
   border-radius: 3px;
-  background: <<colour background>>;
+  background: <<colour tiddler-editor-background>>;
+  color: <<colour tiddler-controls-foreground>>;
+  fill: <<colour tiddler-controls-foreground>>;
   border: 1px solid <<colour tiddler-editor-border>>;
 }
 
@@ -476,8 +485,8 @@ button.tc-btn-invisible {
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
   transition: border .14s ease-in-out;
-  border: 1px solid #d9d9d9;
-  background: <<colour tiddler-background>>;
+  border: 1px solid <<colour tiddler-editor-border>>;
+  background: <<colour tiddler-editor-background>>;
   padding: 4px;
   border-radius: 4px;
 }
@@ -485,7 +494,7 @@ button.tc-btn-invisible {
 .tc-tiddler-frame input.tc-edit-texteditor:focus,
 .tc-tiddler-frame textarea.tc-edit-texteditor:focus,
 .tc-tiddler-frame iframe.tc-edit-texteditor:focus {
-  box-shadow: 0 0 0 0.2rem #e6f0ff;
+  box-shadow: 0 0 0.2rem 0 <<colour primary>>;
   outline: 0;
   border-color: <<colour primary>>;
 }
@@ -507,10 +516,6 @@ button.tc-btn-invisible {
   .tc-tiddler-controls .py-toggle-todo-button .done svg {
     fill: #2da562;
   }
-}
-
-button:active, button:focus {
-  outline: none;
 }
 
 button.tc-tag-label, span.tc-tag-label {

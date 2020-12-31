@@ -1,22 +1,22 @@
-alert-background: #ffe476
-alert-border: #b99e2f
+alert-background: #643b43
+alert-border: #3f181f
 alert-highlight: #881122
-alert-muted-foreground: #b99e2f
-background: #ffffff
+alert-muted-foreground: #bc8b94
+background: #383e49
 blockquote-bar: <<colour muted-foreground>>
 button-background:
 button-foreground:
 button-border:
-code-background: #f7f7f9
-code-border: #e1e1e8
+code-background: #2c323b
+code-border: #111
 code-foreground: #dd1144
 dirty-indicator: #c63636
-download-background: #66cccc
+download-background: #98be65
 download-foreground: <<colour background>>
 dragger-background: <<colour foreground>>
 dragger-foreground: <<colour background>>
 dropdown-background: <<colour background>>
-dropdown-border: #ddd
+dropdown-border: #111
 dropdown-tab-background-selected: #fff
 dropdown-tab-background: #ececec
 dropzone-background: #da8548
@@ -24,9 +24,9 @@ external-link-background-hover: inherit
 external-link-background-visited: inherit
 external-link-background: inherit
 external-link-foreground-hover: inherit
-external-link-foreground-visited: #0000aa
-external-link-foreground: #0000ee
-foreground: #3F3B3B
+external-link-foreground-visited: #61afef
+external-link-foreground: #c678dd
+foreground: #c8ced8
 message-background: #ecf2ff
 message-border: #cfd6e6
 message-foreground: #547599
@@ -39,20 +39,20 @@ modal-header-border: #eeeeee
 muted-foreground: #999999
 notification-background: #ffffdd
 notification-border: #999999
-page-background: #f4f4ee
-pre-background: #f6f6f6
-pre-border: #cccccc
-primary: #7f4bca
+page-background: #262b33
+pre-background: <<colour page-background>>
+pre-border: <<colour tiddler-border>>
+primary: #bf93ff
 select-tag-background:
 select-tag-foreground:
-sidebar-button-foreground: #a6a69c
-sidebar-controls-foreground-hover: #000000
+sidebar-button-foreground: #888d95
+sidebar-controls-foreground-hover: #cccccc
 sidebar-controls-foreground: <<colour sidebar-button-foreground>>
 sidebar-foreground-shadow: rgba(255,255,255, 0.8)
 sidebar-foreground: #acacac
 sidebar-muted-foreground-hover: #444444
 sidebar-muted-foreground: #c0c0c0
-sidebar-tab-background-selected: #ffffff
+sidebar-tab-background-selected: <<colour tab-background>>
 sidebar-tab-background: <<colour tab-background>>
 sidebar-tab-border-selected: <<colour tab-border-selected>>
 sidebar-tab-border: <<colour tab-border>>
@@ -61,28 +61,28 @@ sidebar-tab-foreground-selected: <<colour tab-foreground-selected>>
 sidebar-tab-foreground: <<colour tab-foreground>>
 sidebar-tiddler-link-foreground-hover: white
 sidebar-tiddler-link-foreground: <<colour tab-foreground>>
-site-title-foreground: #353748
+site-title-foreground: <<colour foreground>>
 static-alert-foreground: #aaaaaa
-tab-background-selected: #ffffff
+tab-background-selected: <<colour background>>
 tab-background: #eeeeee
 tab-border-selected: #cccccc
 tab-border: #cccccc
 tab-divider: #d8d8d8
-tab-foreground-selected: <<colour foreground>>
-tab-foreground: #888888
-table-border: #dddddd
+tab-foreground-selected: #ecf2ff
+tab-foreground: <colour foreground>>
+table-border: #aaaaaa
 table-footer-background: #a8a8a8
-table-header-background: #f0f0f0
-tag-background: #ffeedd
+table-header-background: #262b33
+tag-background: #fcb671
 tag-foreground: #000
 tiddler-background: <<colour background>>
-tiddler-border: #dbdbc7;
-tiddler-controls-foreground-hover: <<colour foreground>>
+tiddler-border: #111;
+tiddler-controls-foreground-hover: <<colour foeground>>
 tiddler-controls-foreground-selected: <<colour foreground>>
 tiddler-controls-foreground: <<color foreground>>
 tiddler-editor-background: <<colour background>>
 tiddler-editor-border-image: #ffffff
-tiddler-editor-border: rgba(0,0,0,.2)
+tiddler-editor-border: rgba(255, 255, 255, 0.3)
 tiddler-editor-fields-even: #e0e8e0
 tiddler-editor-fields-odd: #f0f4f0
 tiddler-info-background: #f8f8f8
@@ -91,7 +91,7 @@ tiddler-info-tab-background: #f8f8f8
 tiddler-link-background: <<colour background>>
 tiddler-link-foreground: <<colour primary>>
 tiddler-subtitle-foreground: #aaaaaa
-tiddler-title-foreground: #333
+tiddler-title-foreground: <<colour foreground>>
 toolbar-new-button:
 toolbar-options-button:
 toolbar-save-button:
@@ -103,3 +103,6 @@ toolbar-cancel-button:
 toolbar-done-button:
 untagged-background: #999999
 very-muted-foreground: #888888
+nc-topbar-background: #1c2129ee
+nc-topbar-search-background: #e1e1d9
+nc-topbar-search-foreground: #283c46

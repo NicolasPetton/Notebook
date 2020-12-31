@@ -77,12 +77,12 @@ tag-background: #ffeedd
 tag-foreground: #000
 tiddler-background: <<colour background>>
 tiddler-border: #ddd
-tiddler-controls-foreground-hover: #888888
-tiddler-controls-foreground-selected: #444444
-tiddler-controls-foreground: #cccccc
-tiddler-editor-background: #f8f8f8
+tiddler-controls-foreground-hover: <<colour foreground>>
+tiddler-controls-foreground-selected: <<colour foreground>>
+tiddler-controls-foreground: <<colour foreground>>
+tiddler-editor-background: <<colour background>>
 tiddler-editor-border-image: #ffffff
-tiddler-editor-border: #cccccc
+tiddler-editor-border: rgba(0,0,0,.2)
 tiddler-editor-fields-even: #e0e8e0
 tiddler-editor-fields-odd: #f0f4f0
 tiddler-info-background: #f8f8f8
