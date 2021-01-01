@@ -524,6 +524,20 @@ button.tc-tag-label, span.tc-tag-label {
 
 /* Fonts */
 
+html, body {
+  font-family: {{$:/themes/nico/notebook/settings/fontfamily}};
+}
+
+.tc-tiddler-frame input.tc-edit-texteditor,
+.tc-tiddler-frame textarea.tc-edit-texteditor,
+.tc-tiddler-frame iframe.tc-edit-texteditor {
+  font-family: {{$:/themes/nico/notebook/settings/editorfontfamily}};
+}
+
+pre, code {
+  font-family: {{$:/themes/nico/notebook/settings/codefontfamily}};
+}
+
 .tc-titlebar, .tc-site-title {
   font-size: 28px !important;
   line-height: 34px !important;
