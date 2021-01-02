@@ -37,8 +37,8 @@ modal-footer-background: #f5f5f5
 modal-footer-border: #dddddd
 modal-header-border: #eeeeee
 muted-foreground: #999999
-notification-background: #ffffdd
-notification-border: #999999
+notification-background: #3a5e39
+notification-border: #192c19
 page-background: #262b33
 pre-background: <<colour page-background>>
 pre-border: <<colour tiddler-border>>
