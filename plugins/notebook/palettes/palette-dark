@@ -27,9 +27,9 @@ external-link-foreground-hover: inherit
 external-link-foreground-visited: #61afef
 external-link-foreground: #c678dd
 foreground: #c8ced8
-message-background: #ecf2ff
-message-border: #cfd6e6
-message-foreground: #547599
+message-background: #2c323e
+message-border: #111
+message-foreground: #d5e2f1
 modal-backdrop: <<colour foreground>>
 modal-background: <<colour background>>
 modal-border: #999999
