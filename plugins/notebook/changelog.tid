@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210102222646713
+modified: 20210106114140599
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -9,8 +9,9 @@ type: text/vnd.tiddlywiki
 
 !! Improvements
 
-* Add colours for messages to the dark palette
-* Add colours for notification to the dark palette
+* Add colours for messages in the dark palette
+* Add colours for notification in the dark palette
+* Set colours for messages in the beige palette
 
 ! 1.3.1
 
