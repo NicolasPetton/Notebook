@@ -1,8 +1,8 @@
 created: 20201211111245754
-modified: 20201211111414096
+modified: 20210112214153985
 title: Customizing
 type: text/vnd.tiddlywiki
 
 !! How can I add sections to the left sidebar?
 
-Any tiddler with the system tag <<tag $:/themes/nico/notebook/tags/SidebarSection>> will be displayed as a section in the left sidebar.
+Just like with the Vanilla sidebar, any tiddler with the system tag <<tag $:/tags/SideBar>> will be displayed as a section in the left sidebar.
