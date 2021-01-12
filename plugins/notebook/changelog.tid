@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210111182115274
+modified: 20210112213938504
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! 1.3.3
+
+!! Improvements
+
+* Make the sidebar more generic by using the default sidebar sections.
 
 ! 1.3.2
 

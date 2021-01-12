@@ -1,9 +1,9 @@
 created: 20200429163239707
-modified: 20210112090913017
+modified: 20210112213620486
 tags: $:/themes/nico/notebook/tags/Sidebar
 title: $:/themes/nico/notebook/ui/Sidebar/Sections
 type: text/vnd.tiddlywiki
 
-<$list filter="[all[shadows+tiddlers]!has[draft.of]tag[$:/themes/nico/notebook/tags/SidebarSection]]">
+<$list filter="[all[shadows+tiddlers]!has[draft.of]tag[$:/tags/SideBar]]">
   {{||$:/themes/nico/notebook/ui/Sidebar/SectionTemplate}}
 </$list>
