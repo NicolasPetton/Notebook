@@ -1,0 +1,13 @@
+created: 20210115130000707
+key: ((toggle-sidebar))
+modified: 20210115130021883
+tags: $:/tags/KeyboardShortcut
+title: $:/themes/nico/notebook/shortcuts/toggle-sidebar
+type: text/vnd.tiddlywiki
+
+<$list
+  filter="[[$:/state/notebook-sidebar]is[missing]] [{$:/state/notebook-sidebar}removeprefix[yes]]"
+  emptyMessage="""<$action-setfield $tiddler="$:/state/notebook-sidebar" text="yes"/>"""
+>
+  <$action-setfield $tiddler="$:/state/notebook-sidebar" text="no"/>
+</$list>

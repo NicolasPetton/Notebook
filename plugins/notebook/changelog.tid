@@ -1,15 +1,21 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210112213938504
+modified: 20210115130529373
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Improvements
+
+* Add a keyboard shortcut (alt+shift+s) to toggle Notebook sidebar
 
 ! 1.3.3
 
 !! Improvements
 
-* Make the sidebar more generic by using the default sidebar sections.
+* Make the sidebar more generic by using the default sidebar sections
 
 ! 1.3.2
 
