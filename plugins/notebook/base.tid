@@ -129,6 +129,10 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: .8em;
 }
 
+.nc-bar .tc-page-controls button .tc-btn-text {
+  font-size: 14px;
+}
+
 .nc-bar .tc-block-dropdown {
   max-height: 70vh;
   overflow: auto;
@@ -499,6 +503,9 @@ button.tc-btn-invisible {
   border-color: <<colour primary>>;
 }
 
+.tc-tiddler-controls .tc-btn-text {
+    font-size: 16px;
+}
 
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .tc-tiddler-frame .tc-tiddler-controls svg {

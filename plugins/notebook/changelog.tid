@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210118210913865
+modified: 20210118212433901
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -11,6 +11,10 @@ type: text/vnd.tiddlywiki
 
 * Add a keyboard shortcut (alt+shift+s) to toggle Notebook sidebar
 * Add missing colours to tiddler editor fields in the dark palette
+
+!! Fixes
+
+* Fix the size of toolbar button labels when the $:/config/Toolbar/Text is set to yes
 
 ! 1.3.3
 
