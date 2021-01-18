@@ -83,8 +83,8 @@ tiddler-controls-foreground: #5e646f
 tiddler-editor-background: <<colour background>>
 tiddler-editor-border-image: #ffffff
 tiddler-editor-border: rgba(255, 255, 255, 0.3)
-tiddler-editor-fields-even: #e0e8e0
-tiddler-editor-fields-odd: #f0f4f0
+tiddler-editor-fields-even: <<colour background>>
+tiddler-editor-fields-odd: #2c323b
 tiddler-info-background: #f8f8f8
 tiddler-info-border: #dddddd
 tiddler-info-tab-background: #f8f8f8
