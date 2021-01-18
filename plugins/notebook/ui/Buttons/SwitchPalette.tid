@@ -1,8 +1,6 @@
 created: 20201210171047824
-creator: nico
 description: Toggle between grey/beige colour palette
-modified: 20201231135107124
-modifier: nico
+modified: 20210118213335643
 tags: $:/tags/PageControls
 title: $:/themes/nico/notebook/ui/Buttons/SwitchPalette
 type: text/vnd.tiddlywiki
