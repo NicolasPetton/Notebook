@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210118214805921
+modified: 20210120225027144
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! 1.3.5
+
+!! Features
+
+* Add an option to reveal tiddler controls on mouseover
 
 ! 1.3.4
 

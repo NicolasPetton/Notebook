@@ -1,5 +1,5 @@
 created: 20201217172915960
-modified: 20201217180427599
+modified: 20210120224800734
 title: $:/themes/nico/notebook/themetweaks
 tags: $:/tags/ControlPanel/Appearance
 caption: {{$:/language/ThemeTweaks/ThemeTweaks}}
@@ -12,6 +12,7 @@ You can tweak certain aspects of the ''Notebook'' theme.
 
 |<$link to="$:/themes/nico/notebook/options/stickytitles"><<lingo Options/StickyTitles>></$link><br>//<<lingo Options/StickyTitles/Hint>>// |<$select tiddler="$:/themes/nico/notebook/options/stickytitles"><option value="no">{{$:/language/No}}</option><option value="yes">{{$:/language/Yes}}</option></$select> |
 |<$link to="$:/themes/tiddlywiki/vanilla/options/codewrapping"><<lingo Options/CodeWrapping>></$link> |<$select tiddler="$:/themes/tiddlywiki/vanilla/options/codewrapping"><option value="pre">{{$:/language/No}}</option><option value="pre-wrap">{{$:/language/Yes}}</option></$select> |
+|<$link to="$:/themes/nico/notebook/options/reveal-tiddler-controls-on-hover">Reveal tiddler controls on mouseover</$link> |<$select tiddler="$:/themes/nico/notebook/options/reveal-tiddler-controls-on-hover"><option value="no">{{$:/language/No}}</option><option value="yes">{{$:/language/Yes}}</option></$select> |
 
 ! <<lingo Settings>>
 

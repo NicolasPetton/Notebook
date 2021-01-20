@@ -1,5 +1,5 @@
 created: 20200419141443144
-modified: 20201211152725288
+modified: 20210120224227503
 tags: $:/tags/Stylesheet
 title: $:/themes/nico/notebook/base
 type: text/vnd.tiddlywiki
@@ -12,6 +12,12 @@ type: text/vnd.tiddlywiki
   </$reveal>
 \end
 
+\define if-reveal-tiddler-controls-on-hover(text)
+  <$reveal state="$:/themes/nico/notebook/options/reveal-tiddler-controls-on-hover" type="match" text="yes">
+    $text$
+  </$reveal>
+\end
+  
 /* Top and bottom bars */
 
 /* Hide the top-right bar */
@@ -505,6 +511,7 @@ button.tc-btn-invisible {
     font-size: 16px;
 }
 
+<<if-reveal-tiddler-controls-on-hover """
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .tc-tiddler-frame .tc-tiddler-controls svg {
     opacity: 0;
@@ -522,6 +529,7 @@ button.tc-btn-invisible {
     fill: #2da562;
   }
 }
+""">>
 
 button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
