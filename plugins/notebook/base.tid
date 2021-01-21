@@ -576,18 +576,29 @@ div.tc-tiddler-frame .tc-tiddler-body {
 
 /* Tabs */
 
+div.tc-tab-buttons {
+  margin-bottom: -4px;
+}
+
 div.tc-tab-buttons button {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1em;
+  padding: .6em .8em .4em .8em;
   border: 0;
-  padding: 5px 10px;
+  border-radius: 0;
   background: transparent;
   cursor: pointer;
+  transition: background ease-in .2s;
+}
+
+div.tc-tab-buttons button:hover {
+    background: rgba(0,0,0,.08);
 }
 
 div.tc-tab-buttons button.tc-tab-selected {
   border: 0;
+  background: transparent;
   border-bottom: 4px solid <<colour primary>>;
 }
 
