@@ -604,10 +604,28 @@ div.tc-tab-buttons button.tc-tab-selected {
 
 /* Dropdowns */
 
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .tc-drop-down {
   box-shadow: 0 0 10px rgba(0,0,0,.2);
   border-radius: 6px;
   padding: 10px 0 !important;
+  animation: pop .15s ease-in forwards;
 }
 
 .tc-drop-down a, .tc-drop-down button {

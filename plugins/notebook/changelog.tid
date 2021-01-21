@@ -1,9 +1,16 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210120225027144
+modified: 20210121205947849
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! master
+
+!! Improvements
+
+* Improve styling for tabs
+* New animation for drop-downs
 
 ! 1.3.5
 
