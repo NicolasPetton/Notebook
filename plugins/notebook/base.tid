@@ -593,7 +593,7 @@ div.tc-tab-buttons button {
 }
 
 div.tc-tab-buttons button:hover {
-    background: rgba(0,0,0,.08);
+  background: rgba(0,0,0,.03);
 }
 
 div.tc-tab-buttons button.tc-tab-selected {
