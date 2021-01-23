@@ -1,0 +1,6 @@
+title: $:/config/
+
+ShortcutInfo/notebook-focus-search: Focus on the topbar search field
+shortcuts/notebook-focus-search: ctrl+shift+F
+Search/AutoFocus: false
+shortcuts/sidebar-search:
