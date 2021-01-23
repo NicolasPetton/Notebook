@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210123204604049
+modified: 20210123212047402
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! master
+
+!! Features
+
+* Add a configuration setting for the story width
 
 ! 1.3.6
 

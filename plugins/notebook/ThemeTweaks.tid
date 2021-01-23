@@ -1,5 +1,5 @@
 created: 20201217172915960
-modified: 20210120224800734
+modified: 20210123211851680
 title: $:/themes/nico/notebook/themetweaks
 tags: $:/tags/ControlPanel/Appearance
 caption: {{$:/language/ThemeTweaks/ThemeTweaks}}
@@ -28,4 +28,5 @@ You can tweak certain aspects of the ''Notebook'' theme.
 |<$link to="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight"><<lingo Metrics/BodyLineHeight>></$link> |<$edit-text tiddler="$:/themes/nico/notebook/metrics/bodylineheight" default="" tag="input"/> |
 |<$link to="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint"><<lingo Metrics/SidebarBreakpoint>></$link><br>//<<lingo Metrics/SidebarBreakpoint/Hint>>// |^<$edit-text tiddler="$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint" default="" tag="input"/> |
 |<$link to="$:/themes/nico/notebook/metrics/sidebar-width"><<lingo Metrics/SidebarWidth>></$link><br>//<<lingo Metrics/SidebarWidth/Hint>>// |^<$edit-text tiddler="$:/themes/nico/notebook/metrics/sidebar-width" default="" tag="input"/> |
+|<$link to="$:/themes/nico/notebook/metrics/story-width"><<lingo Metrics/StoryWidth>></$link><br>//<<lingo Metrics/StoryWidth/Hint>>// |^<$edit-text tiddler="$:/themes/nico/notebook/metrics/story-width" default="" tag="input"/> |
 

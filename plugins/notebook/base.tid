@@ -33,7 +33,7 @@ div.tc-sidebar-header {
 .tc-story-river {
   padding: 6px 0 !important;
   width: 100% !important;
-  max-width: 960px !important;
+  max-width: {{$:/themes/nico/notebook/metrics/story-width}} !important;
   margin: 0 auto !important;
   margin-top: 36px !important;
 }
@@ -72,8 +72,8 @@ h1.tc-site-title {
 .nc-bar.nc-topbar {
   top: 0;
   background: <<colour page-background>>ee;
-  max-width: 1000px;
-  padding: 10px 40px;
+  max-width: calc({{$:/themes/nico/notebook/metrics/story-width}} + 40px);
+  padding: 10px 20px;
   margin: 0 auto;
 }
 
@@ -167,25 +167,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-@media(max-width: 1400px) {
-  .tc-story-river {
-    max-width: 800px !important;
-  }
-
-  .nc-bar.nc-topbar {
-    max-width: 840px;
-  }
-}
-
 @media(max-width: 1100px) {
-  .tc-story-river {
-    max-width: 600px !important;
-  }
-
-  .nc-bar.nc-topbar {
-    max-width: 640px;
-  }
-
   .nc-bar input[type="search"] {
     width: 200px;
   }
@@ -202,23 +184,11 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-@keyframes sidebar-toggle-appear {
-  0%   {
-    left: 6px;
-  }
-  100% {
-    left: calc({{$:/themes/nico/notebook/metrics/sidebar-width}} + 6px);
-  }
-}
-
 <<if-sidebar """
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
     animation: sidebar-appear .14s;
-  }
-
-  .sidebar-toggle {
-    animation: sidebar-toggle-appear .14s;
+    padding-top: 40px;
   }
 }
 """>>
@@ -229,7 +199,6 @@ input[type="search"]::-webkit-search-cancel-button {
   width: {{$:/themes/nico/notebook/metrics/sidebar-width}};
   overflow-y: auto;
   overflow-x: hidden;
-  padding-top: 10px;
   z-index: 500;
 }
 
@@ -393,18 +362,11 @@ input[type="search"]::-webkit-search-cancel-button {
   fill: <<colour sidebar-controls-foreground-hover>>;
 }
 
-<<if-sidebar """
-@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .sidebar-toggle {
-    left: calc({{$:/themes/nico/notebook/metrics/sidebar-width}} + 6px);
-  }
-}
-""">>
-
 @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .sidebar-toggle {
     top: auto;
     bottom: 10px;
+    left: 10px;
   }
 }
 
