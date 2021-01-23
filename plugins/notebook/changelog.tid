@@ -1,17 +1,17 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210123135322139
+modified: 20210123204604049
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
 
-! master
+! 1.3.6
 
 !! Improvements
 
-* Improve styling for tabs
+* Improve the style of tabs
 * New animation for drop-downs
-* Use a slightly lighter background colour in palette-beige
+* Use a lighter page background colour in the beige palette
 
 !! Fixes
 
