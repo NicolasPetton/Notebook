@@ -77,10 +77,6 @@ h1.tc-site-title {
   margin: 0 auto;
 }
 
-.nc-bar.nc-topbar .left div {
-  display: inline;
-}
-
 .nc-bar.nc-bottombar {
   position: fixed;
   bottom: 0;

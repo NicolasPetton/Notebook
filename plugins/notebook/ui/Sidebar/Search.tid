@@ -1,11 +1,13 @@
 created: 20200429191943257
-modified: 20201231111206266
+modified: 20210124220152702
 tags: $:/themes/nico/notebook/tags/Sidebar
 title: $:/themes/nico/notebook/ui/Sidebar/Search
 type: text/vnd.tiddlywiki
 
 <div class="mobile-only">
   <div class="segment">
-    {{$:/themes/nico/notebook/ui/Search}}
+    <div class="content search">
+      {{$:/themes/nico/notebook/ui/Search}}
+    </div>
   </div>
 </div>
