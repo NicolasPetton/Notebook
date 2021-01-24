@@ -1,5 +1,5 @@
 created: 20200428203101797
-modified: 20210118213305291
+modified: 20210124213834458
 tags: $:/tags/PageTemplate
 title: $:/themes/nico/notebook/ui/Topbar
 type: text/vnd.tiddlywiki
@@ -8,11 +8,12 @@ type: text/vnd.tiddlywiki
   <div class="nc-topbar-wrapper">
     <div class="nc-bar nc-topbar tc-adjust-top-of-scroll">
       <$list filter="[all[shadows+tiddlers]tag[$:/tags/NotebookTopbar]!has[draft.of]]" variable="listItem">
-        <$reveal type="nomatch" state=<<config-title>> text="hide"  tag="div">
+        <$reveal type="nomatch" state=<<config-title>> text="hide" tag="div">
           <$transclude tiddler=<<listItem>> mode="block"/>
         </$reveal>
       </$list>
-      <div class="center">
+      <div class="left">
+	{{$:/themes/nico/notebook/ui/Buttons/menu}}
         {{$:/themes/nico/notebook/ui/Search}}
       </div>
       <div class="right">

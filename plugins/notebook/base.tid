@@ -35,7 +35,7 @@ div.tc-sidebar-header {
   width: 100% !important;
   max-width: {{$:/themes/nico/notebook/metrics/story-width}} !important;
   margin: 0 auto !important;
-  margin-top: 36px !important;
+  margin-top: 34px !important;
 }
 
 div.tc-tiddler-frame {
@@ -77,6 +77,10 @@ h1.tc-site-title {
   margin: 0 auto;
 }
 
+.nc-bar.nc-topbar .left div {
+  display: inline;
+}
+
 .nc-bar.nc-bottombar {
   position: fixed;
   bottom: 0;
@@ -91,7 +95,7 @@ h1.tc-site-title {
 }
 
 .nc-bar input[type="search"] {
-  width: 400px;
+  width: 200px;
   padding: .6em 1em;
   margin-top: -.2em;
   background: <<colour sidebar-button-foreground>>44;
@@ -102,6 +106,7 @@ h1.tc-site-title {
 }
 
 .nc-bar input[type="search"]:focus {
+  width: 300px;
   background: <<colour tiddler-background>>;
   color: <<colour foreground>>;
   border: 1px solid <<colour primary>>;
@@ -188,7 +193,7 @@ input[type="search"]::-webkit-search-cancel-button {
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .nc-sidebar {
     animation: sidebar-appear .14s;
-    padding-top: 40px;
+    padding-top: 10px;
   }
 }
 """>>
@@ -307,7 +312,7 @@ input[type="search"]::-webkit-search-cancel-button {
     top: 0;
     bottom: 48px;
     z-index: 3000;
-    animation: sidebar-slide .2s;
+    animation: sidebar-slide ease-in .2s;
     animation-fill-mode: forwards;
   }
 }
@@ -347,12 +352,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .sidebar-toggle {
-  position: fixed;
-  top: 6px;
-  left: 6px;
-  z-index: 600;
-  padding: 4px;
-  border-radius: 8px;
+  /* position: fixed; */
+  /* top: 6px; */
+  /* left: 6px; */
+  /* z-index: 600; */
+  /* padding: 4px; */
+  /* border-radius: 8px; */
+  margin-right: 10px;
   transition: all ease-in-out .2s;
   fill: <<colour sidebar-controls-foreground>>;
 }
@@ -362,13 +368,13 @@ input[type="search"]::-webkit-search-cancel-button {
   fill: <<colour sidebar-controls-foreground-hover>>;
 }
 
-@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
-  .sidebar-toggle {
-    top: auto;
-    bottom: 10px;
-    left: 10px;
-  }
-}
+/* @media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) { */
+/*   .sidebar-toggle { */
+/*     top: auto; */
+/*     bottom: 10px; */
+/*     left: 10px; */
+/*   } */
+/* } */
 
 .sidebar-toggle .bars .bar {
     transform: rotate(0) translateY(0) translateX(0);
