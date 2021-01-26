@@ -1,20 +1,17 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210126202930963
+modified: 20210126204725545
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
 
-! master
+! 1.4.0
 
 !! Features
 
+* New redesigned topbar layout
 * Add a configuration setting for the story width
 * Add support for keyboard navigation in the search dropdown
-
-!! Improvements
-
-* New topbar layout
 
 ! 1.3.6
 
