@@ -1,5 +1,5 @@
 created: 20200429191943257
-modified: 20210124220156926
+modified: 20210126170723413
 title: $:/themes/nico/notebook/ui/Search
 type: text/vnd.tiddlywiki
 
@@ -9,8 +9,39 @@ type: text/vnd.tiddlywiki
 <$action-navigate $to="$:/AdvancedSearch"/>
 \end
 
-<$vars searchTiddler="$:/temp/notebook-search">
-  <$edit-text tiddler=<<searchTiddler>> tag="input" type="search" focusPopup="$:/state/popup/notebook-search" class="tc-popup-handle" placeholder="Search..." default=""/>
+\define input-accept-actions()
+<$list filter="[<__tiddler__>get[text]!is[missing]] ~[<__tiddler__>get[text]is[shadow]]">
+  <$action-navigate $to={{{ [<__tiddler__>get[text]] }}}/>
+  <$action-deletetiddler $filter="[[$:/temp/search]] [<searchTiddler>] [<searchListState>]"/>
+</$list>
+\end
+
+\define cancel-search-actions()
+<$list filter="[<searchTiddler>get[text]!match{$:/temp/search}]" emptyMessage="""<$action-deletetiddler $filter="[[$:/temp/search]] [<searchTiddler>] [<searchListState>]"/>""">
+  <$action-setfield $tiddler="$:/temp/search" text={{{ [<searchTiddler>get[text]] }}}/>
+  <$action-setfield $tiddler="$:/temp/search/refresh" text="yes"/></$list>
+\end
+
+<$vars editTiddler="$:/temp/search"
+       searchTiddler="$:/temp/search/input"
+       searchListState=<<qualify "$:/state/search-list/selected-item">>>
+  <$macrocall $name="keyboard-driven-input"
+	      tiddler=<<editTiddler>>
+	      storeTitle=<<searchTiddler>>
+	      selectionStateTitle=<<searchListState>>
+	      refreshTitle="$:/temp/search/refresh"
+	      type="search"
+	      tag="input"
+	      focus={{$:/config/Search/AutoFocus}}
+	      focusPopup="$:/state/popup/notebook-search"
+	      class="tc-popup-handle"
+	      filterMinLength={{$:/config/Search/MinLength}}
+	      placeholder="Search..."
+	      inputAcceptActions=<<input-accept-actions>>
+	      inputCancelActions=<<cancel-search-actions>>
+	      cancelPopups="yes"
+	      configTiddlerFilter="[[$:/state/search/currentTab]!is[missing]get[text]] ~[{$:/config/SearchResults/Default}]"
+	      />
   <$button
     tooltip={{$:/language/Buttons/AdvancedSearch/Hint}}
     aria-label={{$:/language/Buttons/AdvancedSearch/Caption}}

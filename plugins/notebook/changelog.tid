@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210124215434201
+modified: 20210126202930963
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 !! Features
 
 * Add a configuration setting for the story width
+* Add support for keyboard navigation in the search dropdown
 
 !! Improvements
 
