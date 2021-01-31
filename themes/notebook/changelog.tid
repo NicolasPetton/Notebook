@@ -1,9 +1,15 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210126204725545
+modified: 20210131205128995
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
+
+! Master
+
+!! Fixes
+
+* Fix section title rendering for tiddlers without a caption field
 
 ! 1.4.0
 
