@@ -1,6 +1,6 @@
 caption: ChangeLog
 created: 20201217180707912
-modified: 20210131205128995
+modified: 20210131205719616
 tags: 
 title: $:/themes/nico/notebook/changelog
 type: text/vnd.tiddlywiki
@@ -10,6 +10,7 @@ type: text/vnd.tiddlywiki
 !! Fixes
 
 * Fix section title rendering for tiddlers without a caption field
+* Fix the colour of links in the sidebar when using Notebook palettes with Vanilla
 
 ! 1.4.0
 
