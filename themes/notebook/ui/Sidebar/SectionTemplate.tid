@@ -1,5 +1,5 @@
 created: 20200429161226897
-modified: 20210131205012421
+modified: 20210202213859460
 title: $:/themes/nico/notebook/ui/Sidebar/SectionTemplate
 type: text/vnd.tiddlywiki
 
@@ -18,7 +18,7 @@ type: text/vnd.tiddlywiki
       <span class="caret">{{$:/themes/nico/notebook/images/caret-down}}</span>
     </$button>
     <div class="content">
-      <$transclude $tiddler=<<currentTiddler>>/>
+      <$transclude $tiddler=<<currentTiddler>> mode="block"/>
     </div>
   </div>
 </$reveal>
