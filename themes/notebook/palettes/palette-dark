@@ -43,8 +43,8 @@ page-background: #262b33
 pre-background: <<colour page-background>>
 pre-border: <<colour tiddler-border>>
 primary: #bf93ff
-select-tag-background:
-select-tag-foreground:
+select-tag-background: <<colour background>>
+select-tag-foreground: <<colour foreground>>
 sidebar-button-foreground: #5e646f
 sidebar-controls-foreground-hover: #cad2e5
 sidebar-controls-foreground: <<colour sidebar-button-foreground>>
