@@ -9,7 +9,7 @@ button-border:
 button-foreground:
 code-background: #2c323b
 code-border: #111
-code-foreground: #dd1144
+code-foreground: #fb6b6b
 dirty-indicator: #c63636
 download-background: #98be65
 download-foreground: <<colour background>>
