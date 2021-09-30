@@ -20,12 +20,12 @@ dropdown-border: #111
 dropdown-tab-background-selected: #fff
 dropdown-tab-background: #ececec
 dropzone-background: #da8548
-external-link-background-hover: inherit
-external-link-background-visited: inherit
-external-link-background: inherit
-external-link-foreground-hover: inherit
-external-link-foreground-visited: #61afef
-external-link-foreground: #c678dd
+external-link-background-hover: transparent
+external-link-background-visited: transparent
+external-link-background: transparent
+external-link-foreground-hover: #fb6b6b
+external-link-foreground-visited: #fb6b6b
+external-link-foreground: #fb6b6b
 foreground: #c8ced8
 message-background: #2c323e
 message-border: #111
@@ -88,7 +88,7 @@ tiddler-editor-fields-odd: #2c323b
 tiddler-info-background: <<colour background>>
 tiddler-info-border: #dddddd
 tiddler-info-tab-background: <<colour background>>
-tiddler-link-background: <<colour background>>
+tiddler-link-background: transparent
 tiddler-link-foreground: <<colour primary>>
 tiddler-subtitle-foreground: #aaaaaa
 tiddler-title-foreground: <<colour foreground>>
