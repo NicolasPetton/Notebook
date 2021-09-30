@@ -18,12 +18,6 @@ type: text/vnd.tiddlywiki
   </$reveal>
 \end
 
-/* Placeholder for element w/o classes */
-
-a, a:visited {
-  color: <<colour primary>>;
-}
-  
 /* Top and bottom bars */
 
 /* Hide the top-right bar */
