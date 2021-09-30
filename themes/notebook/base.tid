@@ -17,7 +17,7 @@ type: text/vnd.tiddlywiki
     $text$
   </$reveal>
 \end
-  
+
 /* Top and bottom bars */
 
 /* Hide the top-right bar */
@@ -498,6 +498,10 @@ button.tc-btn-invisible {
 button.tc-tag-label, span.tc-tag-label {
   padding: 0.3em 1em !important;
 }
+
+select:hover {
+  border-color: <<colour primary>>;
+}    
 
 /* Fonts */
 

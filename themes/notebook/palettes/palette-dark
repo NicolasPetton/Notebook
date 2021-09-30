@@ -9,7 +9,7 @@ button-border:
 button-foreground:
 code-background: #2c323b
 code-border: #111
-code-foreground: #dd1144
+code-foreground: #fb6b6b
 dirty-indicator: #c63636
 download-background: #98be65
 download-foreground: <<colour background>>
@@ -20,12 +20,12 @@ dropdown-border: #111
 dropdown-tab-background-selected: #fff
 dropdown-tab-background: #ececec
 dropzone-background: #da8548
-external-link-background-hover: inherit
-external-link-background-visited: inherit
-external-link-background: inherit
-external-link-foreground-hover: inherit
-external-link-foreground-visited: #61afef
-external-link-foreground: #c678dd
+external-link-background-hover: transparent
+external-link-background-visited: transparent
+external-link-background: transparent
+external-link-foreground-hover: #fb6b6b
+external-link-foreground-visited: #fb6b6b
+external-link-foreground: #fb6b6b
 foreground: #c8ced8
 message-background: #2c323e
 message-border: #111
@@ -43,8 +43,8 @@ page-background: #262b33
 pre-background: <<colour page-background>>
 pre-border: <<colour tiddler-border>>
 primary: #bf93ff
-select-tag-background:
-select-tag-foreground:
+select-tag-background: <<colour background>>
+select-tag-foreground: <<colour foreground>>
 sidebar-button-foreground: #5e646f
 sidebar-controls-foreground-hover: #cad2e5
 sidebar-controls-foreground: <<colour sidebar-button-foreground>>
@@ -85,10 +85,10 @@ tiddler-editor-border-image: #ffffff
 tiddler-editor-border: rgba(255, 255, 255, 0.3)
 tiddler-editor-fields-even: <<colour background>>
 tiddler-editor-fields-odd: #2c323b
-tiddler-info-background: #f8f8f8
+tiddler-info-background: <<colour background>>
 tiddler-info-border: #dddddd
-tiddler-info-tab-background: #f8f8f8
-tiddler-link-background: <<colour background>>
+tiddler-info-tab-background: <<colour background>>
+tiddler-link-background: transparent
 tiddler-link-foreground: <<colour primary>>
 tiddler-subtitle-foreground: #aaaaaa
 tiddler-title-foreground: <<colour foreground>>
