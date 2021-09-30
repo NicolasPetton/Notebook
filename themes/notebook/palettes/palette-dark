@@ -23,7 +23,7 @@ dropzone-background: #da8548
 external-link-background-hover: transparent
 external-link-background-visited: transparent
 external-link-background: transparent
-external-link-foreground-hover: <<colour foreground>>
+external-link-foreground-hover: #fb6b6b
 external-link-foreground-visited: #fb6b6b
 external-link-foreground: #fb6b6b
 foreground: #c8ced8
